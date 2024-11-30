@@ -1,6 +1,6 @@
 <div align="center">
   
-## Civanoglu - Property Listing (Laravel Project)
+## Confirm Booking - Property Listing (Laravel Project)
 
 > Technology Used : Laravel-8, Tailwind CSS, JavaScript, jQuery and MySQL Database
 </div>
