@@ -26,7 +26,7 @@
 1. Clone the repo
 
 ```
-> git clone https://github.com/brainbarett/yerin
+> git clone https://github.com/Parthadee/Confirm-booking.git
 ```
 
 2. Install the project's dependencies(make sure you're in the project's directory when running the command)
