@@ -1,75 +1,27 @@
-<div align="center">
-  
-## Confirm Booking - Property Listing (Laravel Project)
 
-> Technology Used : Laravel-8, Tailwind CSS, JavaScript, jQuery and MySQL Database
-</div>
+![Houzi Real Estate App for Houzez](images/banner.jpg)
 
-## What I have done
-   - Completed property search by Rent/Sale, Type, Bedrooms, Price range.
-   - Applied 3 Language(English, Bangla, Turkish) support through Laravel Localization.
-   - Applied Laravel Queue for sending/enquiring/contacting User Email.
-   - 3 Types Currency Converter System Added (USD(Dollar), BDT(Taka), TR(Turkish Lira))
-   - Hosted it Cloudways Server.
-   - Used form as Component
-   - Used property item as Component
-   - Display search result in the property page with query message under the title
-   - Display the count of the total search property
-   - Use TailWind grid box to design the "property card" (each item height is equal)
-   - Use Tailwind @apply css to style the search form
+This is rest api plugin for for Houzi Flutter App.
 
-## Demo
-## Search Result Summary Demo
-<img src="https://github.com/Shahed-Chy-Suzan/property-listing/blob/master/z_others/demo-images/serach-result.png"/>
+Houzi a real estate mobile application that connects with Houzez Wordpress theme. Its build with Flutter so it can be deployed to Android and iOS.
 
-## Entire Properties Page
-<img src="https://github.com/Shahed-Chy-Suzan/property-listing/blob/master/z_others/demo-images/properties.jpg"/>
-
-## Entire Dashboard / Admin-Panel Page
-<img src="https://github.com/Shahed-Chy-Suzan/property-listing/blob/master/z_others/demo-images/Dashboard.png"/>
-
-Some screenshots can be found <a target="blank" href="https://drive.google.com/drive/folders/1WAYff_6D8BTRLvZbAFe0ZqwIXpgLU3Hf?usp=sharing">HERE</a>
+Visit website here: https://houzi.booleanbites.com
 
 
-## About 1st Task
-    - First task was to complete the search query from home page.
+Read documentation about Houzi here:
 
-## Part #17 - Localization
-   - Added Localization package
-   - Added custom fonts for Bangla
-   - Created bn.json file to make the translation (into Bangla).                                                                  
-   - Created tr.json file to make the translation (into Turkish).                                                                  
+### [Tools](https://houzi-docs.booleanbites.com/tools/xcode_setup)
 
-## Part #20 - Dashboard
-   - Added Dashboard Page
-   - Added Property index page
-   - Added Property add new page with validation
-   - Added Property edit page with validation and update function
-   - Added Property delete function
+This section addresses all the tools and other environment configurations you need to do get the development started.
 
-## Part #23
-   - Add Dashboard Location Menu
-   - Added Location index page
-   - Added Location add new page with validation
-   - Added Location edit with validation and update function
-   - Added Location delete function
+#### [App Setup](https://houzi-docs.booleanbites.com/app-setup/change_url)
 
-## Part #24,25,26
-   - Back end controllers converted into Resource Route 
-   - (Properties, Locations, Pages, Users and Messages)
-   - User's Messages/Mail/Contact/Enquires listed
-   - Destroy method for Messages/Enquires
-   - Install Php Flasher
-   - Added flash message for all operations (Store, Update, Destroy) of all Admin Controller
-   - Generated "Queue" table and work with jobs
-   - Created jobs for enquire email sending
+This section guides through all the steps related to app setup and customization.
 
-## Additional Work
-    - Design Dashboard for summery of the site
-    - Show count of all items (Properties, Locations, Pages, Users and Messages) in dashboard
+#### [Houzi Config Builder](https://houzi-docs.booleanbites.com/houzi-config-builder/introduction)
 
-Some screenshots can be found <a target="blank" href="https://drive.google.com/drive/folders/1WAYff_6D8BTRLvZbAFe0ZqwIXpgLU3Hf?usp=sharing">HERE</a>
+This section talks about designing and generating configuration with Houzi Builder, that can be used in the app.
 
-## Part #28
-    - Currency Converter System Added (USD(Dollar), BDT(Taka), TR(Turkish Lira))
+### Try the demo app here:
 
+ [![Houzi real estate app for Houzez](images/apple_store.png)](https://apps.apple.com/us/app/id1598357211)  [![Houzi real estate app for Houzez](images/google_play.png)](https://play.google.com/store/apps/details?id=com.booleanbites.houzez)
