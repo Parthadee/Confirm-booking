@@ -1,4 +1,4 @@
-# Yerin
+# Partha
 
 🏡 Real Estate CMS for agencies to manage their property listings. It's currently in its early stages; not production ready.
 
