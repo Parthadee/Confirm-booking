@@ -1,27 +1,100 @@
+# Yerin
 
-![Houzi Real Estate App for Houzez](images/banner.jpg)
+🏡 Real Estate CMS for agencies to manage their property listings. It's currently in its early stages; not production ready.
 
-This is rest api plugin for for Houzi Flutter App.
+> 📝 NOTE: Incremental migrations will start when v1.0.0 is released. Until then migration files will be modified.
 
-Houzi a real estate mobile application that connects with Houzez Wordpress theme. Its build with Flutter so it can be deployed to Android and iOS.
+| Screenshots                                                         |
+| ------------------------------------------------------------------- |
+| <img src="./public/github/creating a property.png" alt="drawing" /> |
 
-Visit website here: https://houzi.booleanbites.com
+## Table of contents
 
+-   [Requirements](#requirements)
+-   [Installation](#installation)
+-   [Tests](#tests)
+-   [Roadmap](#roadmap)
 
-Read documentation about Houzi here:
+## Requirements
 
-### [Tools](https://houzi-docs.booleanbites.com/tools/xcode_setup)
+-   php >= 8.1
+-   mysql >= 5.7
+-   composer (see http://getcomposer.org/download)
 
-This section addresses all the tools and other environment configurations you need to do get the development started.
+## Installation
 
-#### [App Setup](https://houzi-docs.booleanbites.com/app-setup/change_url)
+1. Clone the repo
 
-This section guides through all the steps related to app setup and customization.
+```
+> git clone https://github.com/brainbarett/yerin
+```
 
-#### [Houzi Config Builder](https://houzi-docs.booleanbites.com/houzi-config-builder/introduction)
+2. Install the project's dependencies(make sure you're in the project's directory when running the command)
 
-This section talks about designing and generating configuration with Houzi Builder, that can be used in the app.
+```
+> composer install
+```
 
-### Try the demo app here:
+3. Modify the auto-generated `.env` file to reflect your environment(mostly the database credentials)
 
- [![Houzi real estate app for Houzez](images/apple_store.png)](https://apps.apple.com/us/app/id1598357211)  [![Houzi real estate app for Houzez](images/google_play.png)](https://play.google.com/store/apps/details?id=com.booleanbites.houzez)
+4. Run the database migrations and seeds
+
+> ⚠️ WARNING: running this command will drop all tables from the specified database
+
+```
+> php artisan migrate:fresh --seed --seeder=DemoSeeder
+```
+
+5. Run the server
+
+```
+> php artisan serve
+```
+
+You can log in with email `admin@test.com` and password `password`
+
+## Tests
+
+Update your `phpunit.xml` file and set the `DB_DATABASE` value to your testing database
+
+You can then run all the tests with
+
+```
+> vendor\bin\phpunit
+```
+
+## Roadmap
+
+-   v1.0.0
+
+    -   ✅ Account management
+
+        -   ✅ Create and modify accounts
+        -   ✅ Authentication
+        -   ✅ Manage and assign roles & permissions
+
+    -   ✅ Property management
+
+        -   ✅ Create and modify properties
+        -   ✅ Manage and assign property amenities
+        -   ✅ Images
+        -   ✅ Geographical locations
+
+    -   ✅ UI translations
+
+    -   ⬜️ Live demo
+
+-   Backlog
+
+    -   ⬜️ Account management
+
+        -   ⬜️ Manage and assign tasks
+
+    -   ⬜️ Property management
+
+        -   ⬜️ Manage and use dynamic property types
+        -   Manage and use dynamic property fields
+        -   ⬜️ Manage and schedule tours
+        -   ⬜️ Make use of the tasks system
+        -   ⬜️ Manage and add notes
+        -   ⬜️ Manage and upload attachments
