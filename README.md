@@ -44,6 +44,7 @@ A Real Estate CMS for agencies to manage their property listings. Currently in i
 ## 🛠️ Running Tests
 
 1️⃣ Update phpunit.xml file and set DB_DATABASE to your testing database.
+
 2️⃣ Run tests
 > vendor/bin/phpunit
 
