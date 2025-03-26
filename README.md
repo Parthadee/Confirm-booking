@@ -2,7 +2,7 @@
 
 A Real Estate CMS for agencies to manage their property listings. Currently in its early stages and not production ready.
 
-**📝 NOTE: Incremental migrations will start when v1.0.0 is released. Until then, migration files will be modified.**
+ > **📝 NOTE: Incremental migrations will start when v1.0.0 is released. Until then, migration files will be modified.**
 
 | 📸 Screenshots                                                         |
 | ------------------------------------------------------------------- |
@@ -27,30 +27,24 @@ A Real Estate CMS for agencies to manage their property listings. Currently in i
 
 1️⃣ Clone the repository
 
-> git clone https://github.com/Parthadee/Confirm-booking.git
+> git clone https://github.com/Parthadee/Real-Estate-CMS.git
 
 2️⃣ Navigate into the project directory and install dependencies
 
 > composer install
 
-3️⃣ Configure EnvironmentModify the auto-generated .env file to reflect your environment (especially database credentials).
+3️⃣ Configure EnvironmentModify the auto-generated .env file to reflect your environment (http://getcomposer.org/download).
 
 4️⃣ Run database migrations and seeds
 
 ***⚠️ WARNING: This will drop all tables from the specified database.**
 
-> php artisan migrate:fresh --seed --seeder=DemoSeeder
-
-5️⃣ Start the development server
-
-> php artisan serve
-
-**🔑 Login Credentials:Email: admin@test.comPassword: password.**
+> php artisan make:migration create_flights_table
 
 ## 🛠️ Running Tests
 
-1️⃣ Update phpunit.xml file and set DB_DATABASE to your testing database.2️⃣ Run tests
-
+1️⃣ Update phpunit.xml file and set DB_DATABASE to your testing database.
+2️⃣ Run tests
 > vendor/bin/phpunit
 
 # 📅 Roadmap
