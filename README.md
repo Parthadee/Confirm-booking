@@ -1,100 +1,98 @@
-# Partha
+# 🏡 Partha - Real Estate CMS
 
-🏡 Real Estate CMS for agencies to manage their property listings. It's currently in its early stages; not production ready.
+A Real Estate CMS for agencies to manage their property listings. Currently in its early stages and not production ready.
 
-> 📝 NOTE: Incremental migrations will start when v1.0.0 is released. Until then migration files will be modified.
+**📝 NOTE: Incremental migrations will start when v1.0.0 is released. Until then, migration files will be modified.**
 
-| Screenshots                                                         |
+| 📸 Screenshots                                                         |
 | ------------------------------------------------------------------- |
-| <img src="./public/github/creating a property.png" alt="drawing" /> |
+| <img src="./public/github/creating a property.png" alt="drawing"/> |
 
-## Table of contents
 
--   [Requirements](#requirements)
--   [Installation](#installation)
--   [Tests](#tests)
--   [Roadmap](#roadmap)
+## 📌 Table of Contents
 
-## Requirements
+🚀 Requirements
 
--   php >= 8.1
--   mysql >= 5.7
--   composer (see http://getcomposer.org/download)
+⚙️ Installation
 
-## Installation
+🛠️ Running Tests
 
-1. Clone the repo
+📅 Roadmap
 
-```
+## 🚀 Requirements
+
+✅ PHP >= 8.1✅ MySQL >= 5.7✅ Composer (Download: getcomposer.org)
+
+## ⚙️ Installation
+
+1️⃣ Clone the repository
+
 > git clone https://github.com/Parthadee/Confirm-booking.git
-```
 
-2. Install the project's dependencies(make sure you're in the project's directory when running the command)
+2️⃣ Navigate into the project directory and install dependencies
 
-```
 > composer install
-```
 
-3. Modify the auto-generated `.env` file to reflect your environment(mostly the database credentials)
+3️⃣ Configure EnvironmentModify the auto-generated .env file to reflect your environment (especially database credentials).
 
-4. Run the database migrations and seeds
+4️⃣ Run database migrations and seeds
 
-> ⚠️ WARNING: running this command will drop all tables from the specified database
+***⚠️ WARNING: This will drop all tables from the specified database.**
 
-```
 > php artisan migrate:fresh --seed --seeder=DemoSeeder
-```
 
-5. Run the server
+5️⃣ Start the development server
 
-```
 > php artisan serve
-```
 
-You can log in with email `admin@test.com` and password `password`
+**🔑 Login Credentials:Email: admin@test.comPassword: password.**
 
-## Tests
+## 🛠️ Running Tests
 
-Update your `phpunit.xml` file and set the `DB_DATABASE` value to your testing database
+1️⃣ Update phpunit.xml file and set DB_DATABASE to your testing database.2️⃣ Run tests
 
-You can then run all the tests with
+> vendor/bin/phpunit
 
-```
-> vendor\bin\phpunit
-```
+# 📅 Roadmap
 
-## Roadmap
+**🎯 v1.0.0**
 
--   v1.0.0
+✅ Account Management
 
-    -   ✅ Account management
+✅ Create & modify accounts
 
-        -   ✅ Create and modify accounts
-        -   ✅ Authentication
-        -   ✅ Manage and assign roles & permissions
+✅ Authentication
 
-    -   ✅ Property management
+✅ Manage & assign roles & permissions
 
-        -   ✅ Create and modify properties
-        -   ✅ Manage and assign property amenities
-        -   ✅ Images
-        -   ✅ Geographical locations
+✅ Property Management
 
-    -   ✅ UI translations
+✅ Create & modify properties
 
-    -   ⬜️ Live demo
+✅ Manage & assign property amenities
 
--   Backlog
+✅ Upload images
 
-    -   ⬜️ Account management
+✅ Geographical locations
 
-        -   ⬜️ Manage and assign tasks
+✅ UI Translations✅ Live Demo
 
-    -   ⬜️ Property management
+**📌 Backlog**
 
-        -   ⬜️ Manage and use dynamic property types
-        -   Manage and use dynamic property fields
-        -   ⬜️ Manage and schedule tours
-        -   ⬜️ Make use of the tasks system
-        -   ⬜️ Manage and add notes
-        -   ⬜️ Manage and upload attachments
+✅ Account Management
+
+✅ Manage & assign tasks
+
+✅ Property Management
+
+✅ Manage & use dynamic property types
+
+**⏳ Manage & use dynamic property fields (In Progress)**
+
+✅ Manage & schedule tours
+
+✅ Utilize task system
+
+✅ Add & manage notes
+
+✅ Upload attachments
